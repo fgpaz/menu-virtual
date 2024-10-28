@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiamo - Menú Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url('fonts/HelveticaNeueRoman.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Estilos Generales */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.05em;
+        }
+
+        header {
+            padding: 2em;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 8em;
+            font-weight: 400;
+            text-transform: lowercase;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 300;            
+            letter-spacing: 0.15em;
+        }
+
+        main {
+            padding: 3em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 5em;
+            text-transform: lowercase;
+            font-weight: bold;
+            border-bottom: 3px solid #000;
+            display: inline-block;
+            margin-bottom: 30px;
+            letter-spacing: 0.15em;
+        }
+
+        .item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .item .price {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .item h3 {
+            font-size: 1.8em;
+            font-weight: normal;
+            text-transform: lowercase;
+            margin: 0;
+        }
+
+        .item p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .sizes {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .sizes h3 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 30px;        
+        }
+
+        .sizes .icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .sizes .icons div {
+            text-align: center;
+        }
+
+        .sizes .icons img {
+            width: 70px;
+            height: auto;
+        }
+
+        .sizes .icons p {
+            margin-top: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        .sizes .icons p strong {
+            display: block;
+            font-size: 1.2em;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-text {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>chiamo.</h1>
+        <p>laboratorio de café</p>
+    </header>
+
+    <main>
+        <!-- Sección Café -->
+        <section id="cafe">
+            <h2>café</h2>
+            <div class="item">
+                <p class="price">$ 2800</p>
+                <div>
+                    <h3>espresso nº 1</h3>
+                    <p>Consultar por origen único.</p>
+                </div>
+            </div>
+            <div class="item">
+                <p class="price">$ 2600</p>
+                <h3>americano nº 2</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 2900</p>
+                <h3>macchiatto nº 1</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 2900</p>
+                <h3>cortado nº 1</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3400</p>
+                <h3>flat white nº 2</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3200</p>
+                <h3>latte nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3200</p>
+                <h3>capuccino nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3800</p>
+                <h3>mocca nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3800</p>
+                <h3>caramel latte nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 3800</p>
+                <h3>vainilla latte nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 2800</p>
+                <h3>chocolatada nº 3</h3>
+            </div>
+            <div class="item">
+                <p class="price">$ 2800</p>
+                <h3>submarino nº 3</h3>
+            </div>
+        </section>
+
+        <!-- Sección Café Frío -->
+        <section id="cafe-frio">
+            <h2>café frío</h2>
+            <div class="item">
+                <p class="price">$ 3600</p>
+                <h3>iced latte</h3>
+                <p>Leche emulsionada en frío, hielo y shot de espresso.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 3900</p>
+                <h3>iced flat white</h3>
+                <p>Leche emulsionada en frío, hielo y 2 shot de espresso.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 4000</p>
+                <h3>iced caramel latte</h3>
+                <p>Syrup de caramelo, leche emulsionada en frío, hielo, shot de espresso, cacao.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 4000</p>
+                <h3>iced vainilla latte</h3>
+                <p>Syrup de vainilla, leche emulsionada en frío, hielo, shot de espresso y cacao.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 3800</p>
+                <h3>espresso tonic</h3>
+                <p>Agua tónica, hielo, rodaja de naranja y shot de espresso.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 3600</p>
+                <h3>afogatto</h3>
+                <p>Shot de espresso + helado *sabor de helado según disponibilidad.</p>
+            </div>
+            <div class="item">
+                <p class="price">$ 3800</p>
+                <h3>cold brew</h3>
+                <p>Café de origen único filtrado en frío.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">c.</p>
+    </footer>
+</body>
+</html>
