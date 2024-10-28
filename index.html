@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Chiamo - Menú Digital</title>
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -24,33 +24,32 @@
         }
 
         header {
-            padding-top: 3em;
-            padding-bottom: 0em;
+            padding-top: 2.5em;
+            padding-bottom: 0;
             text-align: center;
         }
 
         header h1 {
-            font-size: 9em;
+            font-size: 7em;
             font-weight: 400;
             text-transform: lowercase;
             margin: 0;
         }
 
         header p {
-            font-size: 2em;
+            font-size: 1.8em;
             font-weight: 300;            
             letter-spacing: 0.15em;
             margin-top: -0.005em;
         }
 
         main {
-            padding: 6em;
+            padding: 3em;
             padding-top: 0;
             max-width: 1600px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            /* gap: 40px; */
         }
 
         section {
@@ -60,7 +59,7 @@
         }
 
         section h2 {
-            font-size: 4em;
+            font-size: 3em;
             text-transform: lowercase;
             font-weight: bold;
             border-bottom: 3px solid #000;
@@ -76,14 +75,14 @@
         }
 
         .item .price {
-            font-size: 1.6em;
+            font-size: 1.4em;
             font-weight: bold;
-            margin-right: 20px;
+            margin-right: 15px;
             align-self: center;
         }
 
         .item h3 {
-            font-size: 1.8em;
+            font-size: 1.6em;
             font-weight: bold;
             text-transform: lowercase;
             margin: 0;
@@ -97,25 +96,25 @@
         }
 
         .item p {
-            font-size: 1.1em;
+            font-size: 1em;
             margin: 1em 0;
         }
 
         .sizes {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .sizes h3 {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: bold;
-            margin-bottom: 30px;        
+            margin-bottom: 20px;        
         }
 
         .sizes .icons {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 30px;
         }
 
         .sizes .icons div {
@@ -123,63 +122,63 @@
         }
 
         .sizes .icons img {
-            width: 70px;
+            width: 60px;
             height: auto;
         }
 
         .sizes .icons p {
             margin-top: 10px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: bold;            
         }
 
-
         .sizes .icons p strong {
             display: block;
-            font-size: 1.2em;            
+            font-size: 1em;            
         }
 
         .sizes .icons p .cup-number {
-            font-size: 0.8em;
+            font-size: 0.7em;
             font-weight: normal !important;
             text-transform: lowercase;
             margin: 0;
         }
 
         .footer-text {
-            font-size: 2em;
+            font-size: 1.8em;
             font-weight: bold;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .cup-number {
-            font-size: 0.8em;
+            font-size: 0.7em;
             font-weight: normal !important;
             text-transform: lowercase;
             margin: 0;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 768px), (max-width: 1440px) and (max-height: 3200px) and (orientation: portrait) {
             main {
+                padding: 2em;
                 flex-direction: column;
-                align-items: center;
+                align-items: center;        
             }
             .footer-text-mobile {
                 display: block;
             }
 
             section h2 {
-                font-size: 3.5em;
+                font-size: 3.6em;
             }
 
             header h1 {
-            font-size: 8em;        
-        }
+                font-size: 6em;        
+            }
 
-        header p {
-            font-size: 1.9em;    
-        }
+            header p {
+                font-size: 1.6em;    
+            }
         }
 
         @media (min-width: 769px) {
@@ -262,7 +261,6 @@
                     <div>
                         <img src="images/size2.png" alt="Tamaño nº 2">
                         <p>nº 2 <br><span class="cup-number"> 180 ml</span></p>
-                        
                     </div>
                     <div>
                         <img src="images/size3.png" alt="Tamaño nº 3">
