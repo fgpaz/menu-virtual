@@ -24,12 +24,13 @@
         }
 
         header {
-            padding: 2em;
+            padding-top: 3em;
+            padding-bottom: 0em;
             text-align: center;
         }
 
         header h1 {
-            font-size: 8em;
+            font-size: 6em;
             font-weight: 400;
             text-transform: lowercase;
             margin: 0;
@@ -42,16 +43,17 @@
         }
 
         main {
-            padding: 3em;
+            padding: 6em;
+            padding-top: 0;
             max-width: 1600px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
+            /* gap: 40px; */
         }
 
         section {
-            padding: 20px;
+            padding: 1em;
             flex: 1;
             min-width: 300px;
         }
@@ -68,7 +70,7 @@
 
         .item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 20px;
         }
 
@@ -76,18 +78,25 @@
             font-size: 1.6em;
             font-weight: bold;
             margin-right: 20px;
-            align-self: flex-start;
+            align-self: center;
         }
 
         .item h3 {
             font-size: 1.8em;
+            font-weight: bold;
+            text-transform: lowercase;
+            margin: 0;
+        }
+        
+        .item .cup-number {
+            font-size: 0.8em;
             font-weight: normal;
             text-transform: lowercase;
             margin: 0;
         }
 
         .item p {
-            font-size: 0.9em;
+            font-size: 1.1em;
             margin: 1em 0;
         }
 
@@ -120,14 +129,20 @@
         .sizes .icons p {
             margin-top: 10px;
             font-size: 1.5em;
-            font-weight: bold;
-            letter-spacing: 0.05em;
+            font-weight: bold;            
         }
+
 
         .sizes .icons p strong {
             display: block;
-            font-size: 1.2em;
-            letter-spacing: 0.05em;
+            font-size: 1.2em;            
+        }
+
+        .sizes .icons p .cup-number {
+            font-size: 0.8em;
+            font-weight: normal !important;
+            text-transform: lowercase;
+            margin: 0;
         }
 
         .footer-text {
@@ -135,6 +150,13 @@
             font-weight: bold;
             text-align: center;
             margin-top: 50px;
+        }
+
+        .cup-number {
+            font-size: 0.8em;
+            font-weight: normal !important;
+            text-transform: lowercase;
+            margin: 0;
         }
 
         @media (max-width: 768px) {
@@ -167,53 +189,53 @@
             <div class="item">
                 <p class="price">$2800</p>
                 <div>
-                    <h3>espresso nº 1</h3>
+                    <h3>espresso <span class="cup-number"> nº 1</span></h3> 
                     <p>Consultar por origen único.</p>
                 </div>
             </div>
             <div class="item">
                 <p class="price">$2600</p>
-                <h3>americano nº 2</h3>
+                <h3>americano <span class="cup-number"> nº 2</span></h3>
             </div>
             <div class="item">
                 <p class="price">$2900</p>
-                <h3>macchiatto nº 1</h3>
+                <h3>macchiatto <span class="cup-number"> nº 1</span></h3>
             </div>
             <div class="item">
                 <p class="price">$2900</p>
-                <h3>cortado nº 1</h3>
+                <h3>cortado <span class="cup-number"> nº 1</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3400</p>
-                <h3>flat white nº 2</h3>
+                <h3>flat white <span class="cup-number"> nº 2</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3200</p>
-                <h3>latte nº 3</h3>
+                <h3>latte <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3200</p>
-                <h3>capuccino nº 3</h3>
+                <h3>capuccino <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3800</p>
-                <h3>mocca nº 3</h3>
+                <h3>mocca <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3800</p>
-                <h3>caramel latte nº 3</h3>
+                <h3>caramel latte <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$3800</p>
-                <h3>vainilla latte nº 3</h3>
+                <h3>vainilla latte <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$2800</p>
-                <h3>chocolatada nº 3</h3>
+                <h3>chocolatada <span class="cup-number"> nº 3</span></h3>
             </div>
             <div class="item">
                 <p class="price">$2800</p>
-                <h3>submarino nº 3</h3>
+                <h3>submarino <span class="cup-number"> nº 3</span></h3>
             </div>
 
             <!-- Sección Tamaños -->
@@ -222,15 +244,16 @@
                 <div class="icons">
                     <div>
                         <img src="images/size1.png" alt="Tamaño nº 1">
-                        <p><strong>nº 1</strong>110 ml</p>
+                        <p>nº 1 <br><span class="cup-number"> 110 ml</span></p>
                     </div>
                     <div>
                         <img src="images/size2.png" alt="Tamaño nº 2">
-                        <p><strong>nº 2</strong>180 ml</p>
+                        <p>nº 2 <br><span class="cup-number"> 180 ml</span></p>
+                        
                     </div>
                     <div>
                         <img src="images/size3.png" alt="Tamaño nº 3">
-                        <p><strong>nº 3</strong>260 ml</p>
+                        <p>nº 3 <br><span class="cup-number">260 ml</span></p>
                     </div>
                 </div>
             </section>
