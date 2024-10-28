@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,18 +37,23 @@
 
         header p {
             font-size: 1.5em;
-            font-weight: 300;
+            font-weight: 300;            
             letter-spacing: 0.15em;
         }
 
         main {
             padding: 3em;
-            max-width: 800px;
+            max-width: 1600px;
             margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
         }
 
         section {
             padding: 20px;
+            flex: 1;
+            min-width: 300px;
         }
 
         section h2 {
@@ -64,7 +68,7 @@
 
         .item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 20px;
         }
 
@@ -72,6 +76,7 @@
             font-size: 1.6em;
             font-weight: bold;
             margin-right: 20px;
+            align-self: flex-start;
         }
 
         .item h3 {
@@ -94,7 +99,7 @@
         .sizes h3 {
             font-size: 2.5em;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 30px;        
         }
 
         .sizes .icons {
@@ -131,9 +136,24 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-text-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .footer-text-mobile {
+                display: none;
+            }
+        }
     </style>
 </head>
-
 <body>
     <header>
         <h1>chiamo.</h1>
@@ -145,7 +165,7 @@
         <section id="cafe">
             <h2>café</h2>
             <div class="item">
-                <p class="price">$ 2800</p>
+                <p class="price">$2800</p>
                 <div>
                     <h3>espresso nº 1</h3>
                     <p>Consultar por origen único.</p>
@@ -195,29 +215,29 @@
                 <p class="price">$2800</p>
                 <h3>submarino nº 3</h3>
             </div>
-        </section>
 
-        <!-- Sección Tamaños -->
-        <section class="sizes">
-            <h3>Tamaños</h3>
-            <div class="icons">
-                <div>
-                    <img src="images/size1.png" alt="Tamaño nº 1">
-                    <p><strong>nº 1</strong>110 ml</p>
+            <!-- Sección Tamaños -->
+            <section class="sizes">
+                <h3>Tamaños</h3>
+                <div class="icons">
+                    <div>
+                        <img src="images/size1.png" alt="Tamaño nº 1">
+                        <p><strong>nº 1</strong>110 ml</p>
+                    </div>
+                    <div>
+                        <img src="images/size2.png" alt="Tamaño nº 2">
+                        <p><strong>nº 2</strong>180 ml</p>
+                    </div>
+                    <div>
+                        <img src="images/size3.png" alt="Tamaño nº 3">
+                        <p><strong>nº 3</strong>260 ml</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/size2.png" alt="Tamaño nº 2">
-                    <p><strong>nº 2</strong>180 ml</p>
-                </div>
-                <div>
-                    <img src="images/size3.png" alt="Tamaño nº 3">
-                    <p><strong>nº 3</strong>260 ml</p>
-                </div>
-            </div>
+            </section>
         </section>
 
         <!-- Sección Café Frío -->
-        <p class="footer-text">c.</p>
+        <p class="footer-text footer-text-mobile">c.</p>
         <section id="cafe-frio">
             <h2>café frío</h2>
             <div class="item">
@@ -270,12 +290,10 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
         <p class="footer-text">c.</p>
     </footer>
 </body>
-
 </html>
